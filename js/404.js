@@ -16,10 +16,16 @@ const messages = [
   "Well, this is awkward... but have you tried turning it off and on again?",
   "Looks like we've lost our marbles, try again later!",
   "Looks like we just hit a dead end, whoops!",
-"Well, that's one way to avoid a typo.",
-"The only thing missing is the sound of a sad trombone.",
+  "Well, that's one way to avoid a typo.",
+  "The only thing missing is the sound of a sad trombone.",
   "Looks like we've hit a dead end, time to U-turn!",
-  "Error 404: File not found. Did you try turning it off and on again?"
+  "Error 404: File not found. Did you try turning it off and on again?",
+  "Looks like you've hit a dead end. Time to turn around!",
+  "Did you try turning it off and on again?",
+  "Well, this is awkward.",
+  "Oops, did we just Rickroll you? Sorry not sorry.",
+  "Looks like we've hit a dead end. Time to retrace our clicks.",
+  "You didn't think this would be easy, did you?"
 ];
 
 toggleButton.addEventListener('click', () => {
