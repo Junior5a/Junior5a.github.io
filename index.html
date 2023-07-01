@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Junior's Website</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link href="/favicon.ico" rel="shortcut icon"/>
-</head>
-<body>
-  <header>
-    <nav>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Junior's Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="/favicon.ico" rel="shortcut icon">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li> <a href="#home">Home</a> </li>
+          <li> <a href="#about">About</a> </li>
+          <li> <a href="#services">Services</a> </li>
+          <li> <a href="#contact">Contact</a> </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <h1>Welcome to our Website</h1>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Thanks for visiting, hope you weren't too bored!</p>
+      <p>Hello there! I'm K_i_c_k. You may call me Junior5a, Junior Epic, or
+        Junior Duck. It's up to you.</p>
+
+                                    <p>I enjoy playing video games, particularly
+                                      Minecraft, Gears 5, Streets of Rage, and
+                                      many others.</p>
+
+    <section id="services">
+      <h2>Our Services</h2>
       <ul>
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
       </ul>
-    </nav>
-  </header>
-  <section id="home">
-    <h1>Welcome to our Website</h1>
-  </section>
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Thanks for visiting, hope you weren't too bored!</p>
-    <p>Hello there! I'm K_i_c_k. You may call me Junior5a, Junior Epic, or Junior Duck. It's up to you.</p>
-    <div id="header"></div>
-  </section>
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Service 1</li>
-      <li>Service 2</li>
-      <li>Service 3</li>
-    </ul>
-  </section>
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Name"> <input type="email" placeholder="Email"> 
-      <textarea placeholder="Message"></textarea> <button type="submit">Submit</button>
-    </form>
-  </section>
-  <footer>
-    <p>Â© 2023 Your Company. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form" method="post" action="send_email.php"> <input name="name"
+
+          placeholder="Your Name" required="" type="text"> <input name="email"
+
+          placeholder="Your Email" required="" type="email"> <textarea name="message"
+
+placeholder="Your Message" required=""></textarea> <button type="submit">Send
+          Message</button> </form>
+    </section>
+    <footer>
+      <p>© 2023 Your Company. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
