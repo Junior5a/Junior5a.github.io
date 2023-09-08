@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <title>Junior's Website</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="/favicon.ico" rel="shortcut icon">
+    <link rel="shortcut icon" href="favicon.ico">
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="nav">
         <ul>
-          <li> <a href="#home">Home</a> </li>
-          <li> <a href="#about">About</a> </li>
-          <li> <a href="#services">Services</a> </li>
-          <li> <a href="#contact">Contact</a> </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -23,13 +23,9 @@
     <section id="about">
       <h2>About Us</h2>
       <p>Thanks for visiting, hope you weren't too bored!</p>
-      <p>Hello there! I'm K_i_c_k. You may call me Junior5a, Junior Epic, or
-        Junior Duck. It's up to you.</p>
-
-                                    <p>I enjoy playing video games, particularly
-                                      Minecraft, Gears 5, Streets of Rage, and
-                                      many others.</p>
-
+      <p>Hello there! I'm K_i_c_k. You may call me Junior5a, Junior Epic, or Junior Duck. It's up to you.</p>
+      <p>I enjoy playing video games, particularly Minecraft, Gears 5, Streets of Rage, and many others.</p>
+    </section>
     <section id="services">
       <h2>Our Services</h2>
       <ul>
@@ -40,14 +36,12 @@
     </section>
     <section id="contact">
       <h2>Contact Us</h2>
-      <form id="contact-form" method="post" action="send_email.php"> <input name="name"
-
-          placeholder="Your Name" required="" type="text"> <input name="email"
-
-          placeholder="Your Email" required="" type="email"> <textarea name="message"
-
-placeholder="Your Message" required=""></textarea> <button type="submit">Send
-          Message</button> </form>
+      <form id="contact-form" method="post" action="send_email.php">
+        <input name="name" placeholder="Your Name" required type="text">
+        <input name="email" placeholder="Your Email" required type="email">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
     <footer>
       <p>© 2023 Your Company. All rights reserved.</p>
