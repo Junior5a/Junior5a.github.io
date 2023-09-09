@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+      :root {
+         --color: #54FE55;
+         --glowSize: 10px;
+      }
+
+      html, body {
+         width: 100%;
+         height: 100%;
+         margin: 0;
+      }
+
+      * {
+         font-family: 'Press Start 2P', cursive;
+         box-sizing: border-box;
+      }
+
+      #app {
+         padding: 1rem;
+         background: black;
+         display: flex;
+         height: 100%;
+         justify-content: center;
+         align-items: center;
+         color: var(--color);
+         text-shadow: 0px 0px var(--glowSize);
+         font-size: 6rem;
+         flex-direction: column;
+      }
+
+      #app .txt {
+         font-size: 2rem;
+      }
+
+      @keyframes blink {
+         0% {
+            opacity: 0;
+         }
+         49% {
+            opacity: 0;
+         }
+         50% {
+            opacity: 1;
+         }
+         100% {
+            opacity: 1;
+         }
+      }
+
+      .blink {
+         animation-name: blink;
+         animation-duration: 1s;
+         animation-iteration-count: infinite;
+      }
+   </style>
+</head>
+<body>
+   <div id="app">
+      <div>403</div>
+      <div class="txt">
+         Forbidden<span class="blink">_</span>
+         <p>Hey, you can't access that page right now. Don't worry though, we'll bring you back to the main page in just <span class="timer">5 seconds</span>.</p>
+      </div>
+      <noscript>Sorry, but seems like your browser doesn't support JavaScript. Mind enabling it, please?</noscript>
+      <noscript>Alternatively, <a href="/">by clicking on me</a>, you will be redirected to the main page.</noscript>
+   </div>
+   <script>
+
+      const app = document.getElementById('app');
+
+      // Get current date and time
+      const currentDate = new Date();
+      const dateText = currentDate.toLocaleString();
+
+      // Create a new element to display the date and time
+      const dateElement = document.createElement('div');
+      dateElement.textContent = dateText;
+      dateElement.style.fontSize = '2rem';
+      dateElement.style.marginTop = '0.5rem';
+
+      // Append the date element to the app container
+      app.appendChild(dateElement);
+      
+      const timerElement = document.querySelector('.timer');
+      let countdown = 5;
+
+      const countdownInterval = setInterval(() => {
+         countdown--;
+         timerElement.textContent = `${countdown} second${countdown === 1 ? '' : 's'}`
+
+         if (countdown === 0) {
+            clearInterval(countdownInterval);
+            window.location.href = 'https://junior5a.github.io/'; // Replace with your desired URL
+         }
+      }, 1000);
+   </script>
+</body>
+</html>
